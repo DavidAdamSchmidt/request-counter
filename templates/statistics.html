@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Statistics
+{% endblock %}
+
+{% block content %}
+    <a href="/">Back to home page</a>
+    <table>
+        <tr>
+            <th>GET</th>
+            <th>POST</th>
+        </tr>
+        <tr>
+            <td>{{ get_counter }}</td>
+            <td>{{ post_counter }}</td>
+        </tr>
+    </table>
+{% endblock %}
